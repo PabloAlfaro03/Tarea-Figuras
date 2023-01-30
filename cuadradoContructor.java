@@ -3,31 +3,28 @@ package Figuras;
 
 public class cuadradoContructor {
 
-	float longitud;
-	float diagonal;
-	float perimetro;
-	float area;
+	double longitud;
+	
 	
 	public cuadradoContructor() {
 		this(173549);
 	}
-	public cuadradoContructor(float longitud){
+	public cuadradoContructor(double longitud){
 		
 		this.longitud = longitud;
 		
 		
 	}
-	public float calculaDiagonal(float diagonal) {
-		System.out.printf("%4.2f",Math.sqrt(Math.pow(longitud, 2)+(Math.pow(longitud, 2))));
+	public double calculaDiagonal() {
 		
-		return diagonal;
+		return (Math.sqrt(Math.pow(longitud, 2)+(Math.pow(longitud, 2))));
 	}
-	public float calcularArea(float area) {
-		System.out.printf("%4.2f",longitud*2);
-		return area;
+	public double calcularArea() {
+		
+		return (longitud*longitud);
 	}
-	public float calcularPerimetro(float perimetro) {
-		System.out.printf("%4.2f",longitud*4);
-		return perimetro;
+	public double calcularPerimetro() {
+		
+		return (longitud+longitud+longitud+longitud);
 }
 }
